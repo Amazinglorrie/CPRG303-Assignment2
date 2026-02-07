@@ -1,8 +1,8 @@
-import { Text, View, Image, ScrollView, FlatList } from 'react-native';
-import { StyleSheet, StatusBar, Platform } from 'react-native';
+import { Text, View, Image, ScrollView, FlatList, StyleSheet, StatusBar, Platform, TouchableOpacity } from 'react-native';
 import { styles } from '@/components/styleSheet';
 import { posts, connections } from '@/data/mockData';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { AlertButton } from '@/components/alertButton';
 
 
 export default function HomeTab() {
@@ -100,6 +100,9 @@ export default function HomeTab() {
           </View>
         )}
       />
+      <TouchableOpacity style={styles.fab} onPress={() => AlertButton()}>
+        <Text style={{ color: 'white' }}>Alert</Text>
+      </TouchableOpacity>
     </View>
   )
 }

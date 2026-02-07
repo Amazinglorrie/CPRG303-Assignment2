@@ -216,4 +216,30 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     marginLeft: 8,
   },
+  fab: {
+  position: 'absolute',
+  right: 20,
+  bottom: 20,
+  color: '#e0e0e0',
+  backgroundColor: '#007AFF',
+  width: 86,
+  height: 86,
+  borderRadius: 28,
+  justifyContent: 'center',
+  alignItems: 'center',
+},
+  AlertPopContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  AlertPopButton: {
+    backgroundColor: '#007AFF',
+    padding: 15,
+    borderRadius: 8,
+  },
+  AlertPopButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
+  }
 })
