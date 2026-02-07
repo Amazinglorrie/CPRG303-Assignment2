@@ -218,7 +218,7 @@ export const styles = StyleSheet.create({
   },
   fab: {
   position: 'absolute',
-  right: 20,
+  right: 50,
   bottom: 20,
   color: '#e0e0e0',
   backgroundColor: '#007AFF',
